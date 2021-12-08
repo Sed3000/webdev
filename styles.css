@@ -1,0 +1,70 @@
+
+@charset "UTF-8";
+/* CSS Document */
+
+/* CSS styles for Body */
+
+
+body {
+		font-famliy: "Palatino Linotype", "serif";
+		font-size: 1em;
+		line-height: 1.4;
+		margin: 10px 5%;
+		background:url () no-repeat; top center;
+		background-color: #5F9EA0;
+}
+
+/* CSS styles for Nav */
+
+nav li {
+	display: inline-block;
+	text-decoration: none;
+	padding-right: 2em;
+	font-size: 20px;
+}
+
+
+h1 {
+	font-family: "Palatino Linotype", "serif"
+	color: #006400;
+	}
+	
+h2 { 
+	padding: 10px 0;
+	font-weight: bold;
+	}	
+	
+h2 a {
+	color: darkgreen;
+}
+
+p {
+		font-size; large
+		font-family; sans-serif;
+		width: 80%;
+	}
+td, th {
+	border: 1px soild gray;
+	}
+	
+dt {
+	border: 2px soild black;
+	font-weight: bold;
+}
+
+/* CSS styles from sections */
+
+section { 
+	margin: width 80%;
+}
+
+figure {
+	width: 50%;
+	
+}
+
+img { 
+	float: left;
+	margin-right: .5em;
+	width:100px;
+}
