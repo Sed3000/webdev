@@ -12,8 +12,12 @@ body.gridwrapper {
 		grid-row: 1;
 	}
 	section#what-virt {
-                grid-colum 2/4;
-                grid-row: 2;
+                grid-colum 2/3;
+                grid-row: 1;
 	}
+	section#what-vm {
+                grid-colum 1/3;
+                grid-row: 1;
+	}	
 
 } 
