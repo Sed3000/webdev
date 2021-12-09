@@ -1,23 +1,24 @@
 @charset "UTF-8";
 /* CSS Dpocument */
 
-body.gridwrapper {
+.gridwrapper {
 	display: grid;
-	grid-template-columns: repeat (3, 1fr); 
-	gap: 10px;
-	grid-auto-rows: minmax(100px, auto);
+	grid-template-columns: repeat 200px 200px 200px; 
+	grid-gap: 10px;
+	grid-template-ares:
+	"header header header"
+	"why-virt what-virt what-vm"
+}
 	
-	section#why-virt {
-		grid-column 1/3;
-		grid-row: 1;
+	
+.why-virt {
+	grid-area:why-virt;
 	}
-	section#what-virt {
-                grid-column 2/3;
-                grid-row: 1;
+.what-virt {
+             grid-area:what-virt;
 	}
-	section#what-vm {
-                grid-column 3/3;
-                grid-row: 1;
+.what-vm {
+            grid-area:what-vm;
 	}	
 
-} 
+ 
