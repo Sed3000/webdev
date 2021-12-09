@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Getting Started with Virtualization</title>
+		<link rel="stylesheet" href="gridstyles.css">
+	</head> 
+			
+	<body class="gridwrapper">
+	
+	<nav>
+		<ul>
+			<li><a href="#why-virt">Why Virtualization</a></li>
+			<li><a href="#what-virt">What is Virtualization</a></li>
+			<li><a href="#what-vm">What is a Virtual Machine</a></li>
+			<li><a href="#what-hypervisor">What is a hypervisor</a></li>
+			<li><a href="#virt-options">Virualization Options</a></li>
+			<li><a href="#pc-resources">PC Resources</a></li>
+			<li><a href="#tools">Tools</a></li>
+		</ul>
+	</nav>
+	
+	<figure>
+		<img src="images/cloud-computing-2023902_960_720.png" alt="Cloud Computing">
+	</figure>
+	
+		
+	<h1>Getting started with Virtualization</h1>
+	
+	<section id="why-virt">
+		<h2>Using Virtualization</h2>
+		<p>We will use virtualization for training for multiple reasons.</p>
+		<ul>
+			<li>Conversation of resources: The usage of Desktops/Laptops</li>
+			<li>Virtualization is a fundamental concept and skill in Todays’ IT</li>
+		</ul>
+	</section>
+	
+	<section id="what-virt">
+		<h2><a href="https://azure.microsoft.com/en-us/overview/what-is-virtualization/" target="blank"> What is Virtualization?</a></h2>
+				
+		<p> Virtualization creates a simulated, or virtual, computing environment as opposed to a physical environment. Virtualization often includes computer-generated versions of hardware, operating systems, storage devices, and more. This allows organizations to partition a single physical computer or server into several virtual machines. Each virtual machine can then interact independently and run different operating systems or applications while sharing the resources of a single host machine. 
+		</p>
+
+		<p> <img src="images/cloud-computing-2023902_960_720.png" alt="Cloud Computing"> By creating multiple resources from a single computer or server, virtualization improves scalability and workloads while resulting in the use of fewer overall servers, less energy consumption, and less infrastructure costs and maintenance. There are four main categories virtualization falls into. The first is desktop virtualization, which allows one centralized server to deliver and manage individualized desktops. The second is network virtualization, designed to split network bandwidth into independent channels to then be assigned to specific servers or devices. The third category is software virtualization, which separates applications from the hardware and operating system. And the fourth is storage virtualization, which combines multiple network storage resources into a single storage device where multiple users may access it.</p>
+	</section>
+	
+	<section id="what-vm">
+		<h2><a href="https://azure.microsoft.com/en-us/overview/what-is-a-virtual-machine/" target="blank">What is a Virtual Machine?</a></h2>
+		
+		<p>A virtual machine is a computer file, typically called an image, that behaves like an actual computer. In other words, creating a computer within a computer. It runs in a window, much like any other program, giving the end user the same experience on a virtual machine as they would have on the host operating system itself. The virtual machine is sandboxed from the rest of the system, meaning that the software inside a virtual machine can’t escape or tamper with the computer itself. This produces an ideal environment for testing other operating systems including beta releases, accessing virus-infected data, creating operating system backups, and running software or applications on operating systems they weren’t originally intended for.</p>
+		
+		<p>Multiple virtual machines can run simultaneously on the same physical computer. For servers, the multiple operating systems run side-by-side with a piece of software called a hypervisor to manage them, while desktop computers typical employ one operating system to run the other operating systems within its program windows. Each virtual machine provides its own virtual hardware, including CPUs, memory, hard drives, network interfaces, and other devices. The virtual hardware is then mapped to the real hardware on the physical machine which saves costs by reducing the need for physical hardware systems along with the associated maintenance costs that go with it, plus reduces power and cooling demand.</p>
+		
+	</section>
+	
+	<section id="what-hypervisor">
+		<h2><a href="https://www.pluralsight.com/blog/it-ops/what-is-hypervisor" target="blank">What is a Hypervisor?</a></h2>
+		
+		<p>A hypervisor is computer software or hardware that enables you to host multiple virtual machines. Each virtual machine can run its own programs. A hypervisor allows you to access several virtual machines that are all working optimally on a single piece of computer hardware.</p>
+		
+		<p>For the most part, cloud computing entails you being able to access a virtual machine for you to be able to do what you need to do anywhere. A hypervisor manages these virtual machines.</p>
+		
+		<p>With a hypervisor, each virtual machine or operating system you have will be able to run its own programs, as it will appear that the system has the host hardware's processor, memory, and resources. However, it is the hypervisor that is allocating those resources to the virtual machines.</p>
+		
+		<p>You may think that the hypervisor is a recent phenomenon. The first hypervisors were introduced in the 1960s to allow for different operating systems on a single mainframe computer. However, its current popularity is largely due to Linux and Unix. Around 2005, Linux and Unix systems started using virtualization technology to expand hardware capabilities, control costs, and improved reliability and security that hypervisors provided to these systems.</p>
+		
+		<p>Now, hypervisors are fundamental components of any virtualization effort. You can think of it as the operating system for virtualized systems. It can access all physical devices residing on a server. It can also access the memory and disk. It can control all aspects and parts of a virtual machine.</p>
+		
+	</section>
+		
+	<section id="virt-options">
+		<h2> Virtualization Options </h2>
+		<table>
+			<tr>
+				<th>For Windows</th>
+				<th>For Linux</th>
+				<th>For Mac</th>
+			</tr>
+			<tr>
+				<td>Hyper-V on Windows Desktop</td>
+				<td>KVM</td>
+				<td>VMWare Fusion</td>
+			</tr>
+			<tr>
+				<td>VMware Workstation/Player</td>
+				<td>VMware Workstation/Player</td>
+			</tr>
+		</table>
+	<p> There are other options for Desktop Virtualization. The above list are the most common. </p>	
+	</section>
+	
+	<section id="pc-resources">
+		<h2>PC Resources</h2>
+		<p>Before installing virtualization software on you PC, you should verify that you have enough physical resources on your computer.</p>
+		<dl>
+			<dt>Memory</dt>
+				<dd>At least 2 gigabytes of available Ram.</dd>
+			<dt>CPU</dt> 
+				<dd>A CPU that is capable of virtualization.</dd>
+			<dt>Storage</dt>
+				<dd>At least 40 gigabytes of available disk space.</dd>
+		</dl>
+		
+		<h3>Here are quick methods to view the amount of resource on your computer.</h3>
+		
+		<h4>Windows</h4>
+		<iframe width="300" height="160" src="https://www.youtube.com/embed/gOitcxknHws" title="Windows: View System Resources" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<h4>MAC</h4>
+		<iframe width="300" height="160" src="https://www.youtube.com/embed/1kVwIlJ6hr8" title="MAC: View System Resources" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	</section>
+	
+	<section id="tools">
+		<h2>Tools</h2>
+		<p> Tools that you want to have </p>
+		
+	
+	<h1>Mailing List Signup</h1>
+	
+	<form action="mailinglist.php" method="GET">
+		<fieldset>
+			<legend>Join our email list </legend>
+			<p>Get our updates on Getting Started with Virtualization</p>
+			<ol>
+				<li><label for="firstlast">Name:</label>
+					<input type="text" name="fullname" id="firstlast"></li>
+				<li><label for="email">Email:</label>
+					<input type="text" name="email" id="email"></li>
+			</ol>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+		
+	<footer>
+		<p>&copy; Sedrick White</p>
+	</footer>
+	</body>
+
+</html>
