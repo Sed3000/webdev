@@ -14,5 +14,6 @@ body.gridwrapper {
 	section#what-virt {
                 grid-colum 2/4;
                 grid-row: 2;
+	}
 
 } 
