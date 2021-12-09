@@ -1,7 +1,18 @@
 @charset "UTF-8";
 /* CSS Dpocument */
 
-.gridwrapper {
+body.gridwrapper {
 	display: grid;
- 
+	grid-template-columns: repeat (3, 1fr); 
+	gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+	
+	section#why-virt {
+		grid-colum 1/3;
+		grid-row: 1;
+	}
+	section#what-virt {
+                grid-colum 2/4;
+                grid-row: 2;
+
 } 
